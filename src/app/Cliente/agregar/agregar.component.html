@@ -1,0 +1,36 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Agregar Clientes</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+             <div class="form-group">
+               <label for=""> Nombre:</label>
+               <input [(ngModel)]="clientes2.nombre" name="Nombre" type="text" class="form-control">                           
+             </div>
+                
+             <div class="form-group">
+                <label for=""> Apellido:</label>
+               
+                <input [(ngModel)]="clientes2.apellido" name="Apellido" type="text" class="form-control">                          
+              </div>
+
+              <div class="form-group">
+                <label for=""> Cedula:</label>
+           
+                <input [(ngModel)]="clientes2.cedula" name="Cedula" type="text" class="form-control">                          
+              </div>
+
+              <div class="form-group">
+                <label for=""> Clasificacion:</label>
+               
+                <input [(ngModel)]="clientes2.clasificacion" name="Clasificacion" type="text" class="form-control">                          
+              </div>
+         
+                <button (click)="Guardar()" class="btn btn-danger">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
+

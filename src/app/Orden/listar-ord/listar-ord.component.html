@@ -1,0 +1,53 @@
+<div class="container col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h3>Pagina de Compras</h3>
+      </div>
+      <div class="card-body">
+        <form action="">
+
+            <div class="form-group">
+            <label for="">id:</label>
+            <input [(ngModel)]="clienteloc.id" name="id" type="text" class="form-control" readonly> 
+            </div>
+
+          <div class="form-group">
+            <label for="">Nombres:</label>
+            <input [(ngModel)]="clienteloc.nombre" name="nombre" type="text" class="form-control" >
+          </div>
+          <div class="form-group">
+            <label for="">Apellidos:</label>
+            <input [(ngModel)]="clienteloc.apellido" name="apellido" type="text" class="form-control" >
+          </div>
+          <div class="form-group">
+            <label for="">Clasificacion:</label>
+            <input [(ngModel)]="clienteloc.clasificacion" name="clasificacion" type="text" class="form-control" >
+          </div>
+          <div class="form-group">
+            <label for="">Cedula:</label>
+            <input [(ngModel)]="clienteloc.cedula" name="cedula" type="text" class="form-control" >
+          </div>
+
+          <div class="form-group">
+            <label for="">Fecha:</label>
+            <input [(ngModel)]="clienteloc.created_at" name="created_at" type="date" class="form-control" >
+          </div>
+           ------------------------------------------------------------------------------------
+          <div class="form-group">
+            <label for="">Descripcion Articulo:</label>
+            <input [(ngModel)]="articuloLoc.descripcion" name="descripcion" type="checkbox" class="form-control" >
+          </div>
+          <div class="form-group">
+            <label for="">Cantidad:</label>
+            <input [(ngModel)]="ordenLoc.cantidad" name="cantidad" type="text" class="form-control" >
+          </div>
+          <div class="form-group">
+            <label for="">Precio venta publico:</label>
+            <input [(ngModel)]="articuloLoc.pvp" name="pvp" type="text" class="form-control" >
+          </div>
+     
+          <button (click)="Actualizar(clienteloc)" class="btn btn-danger">Realizar Compra</button>
+        </form>
+      </div>
+    </div>
+  </div>

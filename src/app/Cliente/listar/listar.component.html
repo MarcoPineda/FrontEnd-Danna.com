@@ -1,0 +1,41 @@
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Clientes</h3>
+        </div>
+        <div class="card-body">
+        <table class ="table table-hover">
+         <thead>
+          <tr>
+            <th>ID</th>
+            <th>CEDULA</th>
+            <th>NOMBRE</th>
+            <th>APELLIDO</th>
+            <th>CLASIFICACION</th>
+            <th>FECHA</th>
+            <th style="border-color: blue;">Accion</th>
+          </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let clientesPres of clientes" class="text-center">
+                <td>{{clientesPres.id}}</td>
+                <td>{{clientesPres.cedula}}</td>
+                <td>{{clientesPres.nombre}}</td>
+                <td>{{clientesPres.apellido}}</td>
+                <td>{{clientesPres.clasificacion}}</td>
+                <td>{{clientesPres.created_at}}</td>
+                   <td>
+                    <button (click)="Editar(clientesPres)"  class="btn btn-warning"style="margin-left: 10px;">Editar</button>
+                    <button (click)="Delete(clientesPres)"  class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+                    <button (click)="EditarOrd(clientesPres.id)" class="btn btn-warning" style="margin-left: 10px;">Comprar</button>
+                   </td>
+    
+                </tr>
+         </tbody>
+
+        </table>
+
+        </div>
+    </div>
+</div>

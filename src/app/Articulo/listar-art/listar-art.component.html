@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Articulos</h3>
+        </div>
+        <div class="card-body">
+        <table class ="table table-hover">
+         <thead>
+          <tr>
+            <th>ID</th>
+            <th>DESCRIPCION</th>
+            <th>CATEGORIA</th>
+            <th>PROCEDENCIA</th>
+            <th>P.V.P</th>
+            <th>P.V.D</th>
+            <th>FECHA</th>
+            <th style="border-color: blue;">Accion</th>
+          </tr>
+         </thead>
+         <tbody>
+            <tr *ngFor="let artPres of articulos" class="text-center">
+                <td>{{artPres.id}}</td>
+                <td>{{artPres.descripcion}}</td>
+                <td>{{artPres.categoria}}</td>
+                <td>{{artPres.procedencia}}</td>
+                <td>{{artPres.pvd}}</td>
+                <td>{{artPres.pvp}}</td>
+                <td>{{artPres.created_at}}</td>
+                   <td>
+                    <button class="btn btn-warning">Editar</button>
+                    <button class="btn btn-danger" style="margin-left: 10px;">Delete</button>
+                   </td>
+    
+                </tr>
+         </tbody>
+
+        </table>
+
+        </div>
+    </div>
+</div>
